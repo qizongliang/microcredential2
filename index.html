@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>QIZONG LIANG - Activity 7 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css" type="text/css">
+  </head>
+  <body>
+    <h1 class="title">QIZONG LIANG - week5 Acitivty56 </h1>
+
+    <a href="#openModal" class="link">Click here</a>
+
+    <div class="modalWindow" id="openModal">
+      <section class="content">
+        <a class="close" href="#">&#10005;</a>
+        <section class="info">
+          <img src="images/cheetotiger.jpg" alt="Cheeto Tiger">
+          <div class="p">CHEETO TIGER <br> <i>Plush Keychain</i>
+            <hr>
+            A puffy cheeto tiger looking for his next owner. He is very friendly and gives off positivity everyday with the smile of his.
+            <hr>
+            <span>$20.00</span><b>Now $15.50</b>
+            <a href="templates/checkout.html" class="add" onclick="gotoCheckout();">ADD TO BAG</a>
+          </div>
+        </section>
+      </section>
+    </div>
+    
+
+    <script type="text/javascript">
+      var item = "CHEETO TIGER";
+      var price = 15.50;
+      function gotoCheckout(){
+        sessionStorage.setItem('item',JSON.stringify(item));
+        sessionStorage.setItem('price',JSON.stringify(price));
+      }
+    </script>
+
+
+    </script>
+  </body>
+</html>
